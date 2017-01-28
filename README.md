@@ -1,6 +1,10 @@
 # Backlit Word Clock
 An arduino-powered clock that tells the time by lighting up cut-outs of words with a rainbow LED strip.
 
+
+![](/Image1.jpg =20x20)
+![](/Image2.jpg =20x20)
+
 <img src="Image1.jpg" alt="Image1" style="width: 10px;"/>
 <img src="Image2.jpg" alt="Image2" style="width: 10px;"/>
 
