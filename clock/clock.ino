@@ -1,6 +1,8 @@
 #include <Adafruit_NeoPixel.h>
 #include <SparkFunDS1307RTC.h>
 #include <stdlib.h>
+#include <Time.h>
+#include <Wire.h>
 
 #define PIN      6
 #define N_LEDS 89 // will be 86
@@ -99,7 +101,6 @@ void updateLEDS() {
 
 void setup() {
   turnOffAll();
-
   Serial.begin(9600);
   rtc.begin();
   strip.begin();
@@ -178,7 +179,7 @@ void loop() {
 
   int hr = rtc.hour();
   if (hr < 5) {hr += 24;}
-  int number = (hr - 5) % 12;
+  int number = (hr - 6) % 12;
   if (32.5 <= mts) {
     number += 1; 
   }
