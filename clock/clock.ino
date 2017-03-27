@@ -1,6 +1,7 @@
 #include <Adafruit_NeoPixel.h>
 #include <SparkFunDS1307RTC.h>
 #include <stdlib.h>
+#include <DateTime.h>
 
 #define PIN      6
 #define N_LEDS 89 // will be 86
@@ -102,6 +103,7 @@ void setup() {
 
   Serial.begin(9600);
   rtc.begin();
+  rtc.setTime(Hour(), Minute(), Second());
   strip.begin();
   turnOffAll();
   updateLEDS();
