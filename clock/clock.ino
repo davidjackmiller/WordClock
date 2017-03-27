@@ -1,8 +1,6 @@
 #include <Adafruit_NeoPixel.h>
 #include <SparkFunDS1307RTC.h>
 #include <stdlib.h>
-#include <Time.h>
-#include <Wire.h>
 
 #define PIN      6
 #define N_LEDS 89 // will be 86
